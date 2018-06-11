@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>--Formulário Contato--</title>
+        <meta charset="utf-8"/>
+        <link href="style.css" rel="stylesheet" media="all"/>
+    </head>
+    <body>
+        <div class="formulario">
+            <form name="meu_form" id="form-contato" method="post">
+                <h1>Entre em contato</h1>
+                <p class="nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome"/>
+                </p>
+                <p class="fone">
+                    <label for="fone">Telefone</label>
+                    <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" required="required" name="telefone"/>
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="emailid" placeholder="fulano@mail.com" required="required" name="email" multiple />
+                </p>
+                <p>
+                    <textarea name="mensagem" placeholder="Deixe sua mensagem"></textarea>
+                </p>
+                <p class="submit">
+                    <input type="submit" onclick="Enviar();" value="Enviar"/>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

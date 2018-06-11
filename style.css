@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+ 
+.formulario{
+	width: 45%;
+	margin: 0 auto;
+} 
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color: #CC3300;
+    max-width: 100%;
+}
+ 
+h1 {
+	text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #66FFFF;
+    text-shadow: 5px 5px 5px black;
+}
+.centraliza{
+	text-align: center;
+}
+ 
+input, textarea {
+    width: 30%;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+ 
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFF00;
+    background-color: #66FFFF;
+    color: black;
+    font-weight: bold;
+}
+ 
+.submit input {
+	margin: 0 auto;
+    background-color: #66FFFF;
+    height: 40px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+ 
+textarea {
+    width: 50%;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+ 
+form label {
+	text-align: center;
+	float:left;
+	display: block;
+    margin-left: 20px;
+    width: 10%;
+    color: #FFFFFF;
+    font-weight: bold;
+}
