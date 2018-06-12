@@ -11,11 +11,11 @@ def send_email(email, subject, body):
     gmail_user = "enviodeemailviaform@gmail.com"
     gmail_password = "teste313"
 
-    email_text = """\  
+    email_text = """   
     From: %s  
     To: %s  
     Subject: %s
-
+    
     %s
     """ % (gmail_user, ", ".join(email), subject, body)
     try:
@@ -107,7 +107,7 @@ def main():
     try:
         # Crie um servidor da Web e defina o manipulador para gerenciar a solicitacao recebida
         server = HTTPServer(('', port_number), RafaHandler)
-        print(f"Started httpserver on port {port_number}")
+        print("Started httpserver on port http://0.0.0.0:{0}".format(port_number))
         # Aguarde para sempre os pedidos de HTTP recebidos
         server.serve_forever()
     except KeyboardInterrupt:

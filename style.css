@@ -10,7 +10,7 @@ body {
 form {
     font-family: Verdana,Tahoma,sans-serif;
     font-size: 15px;
-    background-color: #CC3300;
+    background-color: #808080;
     max-width: 100%;
 }
  
@@ -18,7 +18,7 @@ h1 {
 	text-align: center;
     margin-bottom: 20px;
     margin-left: 20px;
-    color: #66FFFF;
+    color: #f18973;
     text-shadow: 5px 5px 5px black;
 }
 .centraliza{
@@ -37,15 +37,15 @@ input, textarea {
  
 input:hover, textarea:hover, input:focus, textarea:focus {
     border-color: #000066;
-    box-shadow: 5px 0px 9px #FFFF00;
-    background-color: #66FFFF;
+    box-shadow: 5px 0px 9px #f18973;
+    background-color: #f4e1d2;
     color: black;
     font-weight: bold;
 }
  
 .submit input {
 	margin: 0 auto;
-    background-color: #66FFFF;
+    background-color: #f18973;
     height: 40px;
     width: 100%;
     font-weight: bold;
