@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#RAFA
+# RAFA
 
 import cgi
 import smtplib
@@ -8,6 +8,7 @@ from os.path import join as pjoin
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
+# Método que envia email
 def send_email(email, subject, body):
     gmail_user = "enviodeemailviaform@gmail.com"
     gmail_password = "teste313"
@@ -38,27 +39,13 @@ class RafaHandler(BaseHTTPRequestHandler):
 
     # Manipulador para as solicitacoes do GET
     def do_GET(self):
-
         if self.path == "/":
             self.path = pjoin(curdir, 'formulario.html')
-
         try:
             # Verifique a extensao de arquivo necessaria e defina o tipo certo de mime
             tenta_enviar = False
             if self.path.endswith(".html"):
                 mimetype = 'text/html'
-                tenta_enviar = True
-            if self.path.endswith(".jpg"):
-                self.path = pjoin(curdir, self.path.replace('/', ''))
-                mimetype = 'image/jpg'
-                tenta_enviar = True
-            if self.path.endswith(".gif"):
-                self.path = pjoin(curdir, self.path.replace('/', ''))
-                mimetype = 'image/gif'
-                tenta_enviar = True
-            if self.path.endswith(".js"):
-                self.path = pjoin(curdir, self.path.replace('/', ''))
-                mimetype = 'application/javascript'
                 tenta_enviar = True
             if self.path.endswith(".css"):
                 self.path = pjoin(curdir, self.path.replace('/', ''))
@@ -72,7 +59,6 @@ class RafaHandler(BaseHTTPRequestHandler):
                     self.send_header('Content-type', mimetype)
                     self.end_headers()
                     self.wfile.write(out.read().encode())
-
             return
 
         except IOError:
